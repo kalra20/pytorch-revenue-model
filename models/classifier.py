@@ -39,3 +39,5 @@ class SklearnClassifier(Classifier):
 
     def predict(self, df:pd.DataFrame)->np.ndarray:
         return self.clf.predict_proba(df[self.features].values)[:,1]
+    
+
